@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html class="full-window" ng-app="ChurchManager">
+<head>
+    <title>@ViewBag.Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @Styles.Render("~/Content/styles")
+
+    <!--[if lt IE 9]>
+      <script src="@Url.Content("~/Scripts/lib/compatibility/html5shiv.js")"></script>
+      <script src="@Url.Content("~/Scripts/lib/compatibility/respond.js")"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        var AppController = function($rootScope) {
+            $rootScope.$appUrl = '@Url.Content("~/")';
+            $rootScope.$resourceUrl = '@Url.Content("~/Content/images/")';
+        };
+    </script>
+</head>
+    <body ng-controller="AppController" ng-cloak>
+        @Html.Partial("_NavBar")
+        @RenderBody()
+        @Scripts.Render("~/bundles/base")
+        @Scripts.Render("~/bundles/churchmanager")
+
+
+        @RenderSection("Scripts", required: false)
+    </body>
+</html>
