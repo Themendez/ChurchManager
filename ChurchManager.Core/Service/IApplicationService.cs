@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ChurchManager.Core.Service
+﻿namespace ChurchManager.Core.Service
 {
     public interface IApplicationService
     {

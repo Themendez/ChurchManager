@@ -24,6 +24,7 @@ namespace ChurchManager.Web
 
             bundles.Add(new StyleBundle("~/Content/styles")
                 .Include("~/Content/css/bootstrap.css")
+                .Include("~/Content/css/font-awesome.css")
                 .Include("~/Content/css/site.css"));
         }
     }

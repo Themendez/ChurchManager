@@ -1,6 +1,6 @@
-﻿using System.Web.Mvc;
+using System.Web.Mvc;
 
-namespace ChurchManager.Web.Controllers
+namespace ChurchManager.Controllers.Controllers
 {
     public class HomeController : Controller
     {
