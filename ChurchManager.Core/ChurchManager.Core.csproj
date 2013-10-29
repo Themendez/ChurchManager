@@ -32,21 +32,18 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.EnterpriseServices" />
-    <Reference Include="System.Xml.Linq" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
-    <Reference Include="System.Data" />
-    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Baptism.cs" />
     <Compile Include="Domain\Person.cs" />
     <Compile Include="Persistence\SearchRequest.cs" />
     <Compile Include="Persistence\SearchResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Persistence\IEntity.cs" />
     <Compile Include="Persistence\IRepository.cs" />
+    <Compile Include="Service\IBaptismService.cs" />
     <Compile Include="Service\IApplicationService.cs" />
+    <Compile Include="Service\IPersonService.cs" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

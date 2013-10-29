@@ -2,7 +2,7 @@
 using NHibernate.Mapping.ByCode;
 using NHibernate.Mapping.ByCode.Conformist;
 
-namespace ChurchManager.Persistence.Mapping
+namespace ChurchManager.Persistence.Mappings
 {
     public class PersonMap : ClassMapping<Person>
     {

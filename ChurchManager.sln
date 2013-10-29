@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChurchManager.Service", "Ch
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChurchManager.SchemaGenerator", "ChurchManager.SchemaGenerator\ChurchManager.SchemaGenerator.csproj", "{D38DA3AD-EBB5-4356-87A7-420BCC84E7F7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ChurchManager.Controllers", "ChurchManager.Controllers\ChurchManager.Controllers.csproj", "{F5B87D6E-EDAE-4DD7-9BCE-43FD1440BF17}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{D38DA3AD-EBB5-4356-87A7-420BCC84E7F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D38DA3AD-EBB5-4356-87A7-420BCC84E7F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D38DA3AD-EBB5-4356-87A7-420BCC84E7F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5B87D6E-EDAE-4DD7-9BCE-43FD1440BF17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5B87D6E-EDAE-4DD7-9BCE-43FD1440BF17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5B87D6E-EDAE-4DD7-9BCE-43FD1440BF17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5B87D6E-EDAE-4DD7-9BCE-43FD1440BF17}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -6,7 +6,7 @@ using ChurchManager.Core.Persistence;
 using NHibernate;
 using NHibernate.Criterion;
 
-namespace ChurchManager.Persistence.Repository
+namespace ChurchManager.Persistence.Repositories
 {
     public class RepositoryBase<T> : IRepository<T>
         where T : class, IEntity, new()
@@ -54,6 +54,14 @@ namespace ChurchManager.Persistence.Repository
             Delete(entity);
         }
 
+        public bool Exists(Expression<Func<T, bool>> predicate)
+        {
+            IQueryOver<T, T> query = Session.QueryOver<T>();
+            query.Where(predicate);
+
+            return query.RowCount() > 0;
+        }
+
         public IList<T> All(bool readOnly = false)
         {
             return All(null, readOnly);
@@ -98,6 +106,15 @@ namespace ChurchManager.Persistence.Repository
                 List = list,
                 Total = rowCount.Value
             };
+        }
+
+        public void Transaction(Action action)
+        {
+            using (ITransaction transaction = Session.BeginTransaction())
+            {
+                action();
+                transaction.Commit();
+            }
         }
 
         private void ApplySortings(ICriteria criteria, IList<string> sortings, bool ascending, IList<string> aliases)

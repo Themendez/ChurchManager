@@ -17,10 +17,14 @@ namespace ChurchManager.Core.Persistence
 
         void Delete(int id);
 
+        bool Exists(Expression<Func<T, bool>> predicate);
+
         IList<T> All(bool readOnly = false);
 
         IList<T> All(Expression<Func<T, bool>> predicate, bool readOnly = false);
 
         SearchResult<T> GetPageByCriteria(SearchRequest searchRequest, bool readOnly = true);
+
+        void Transaction(Action action);
     }
 }
