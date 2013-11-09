@@ -15,6 +15,12 @@ namespace ChurchManager.Controllers.Controllers
             _baptismService = baptismService;
         }
 
+        [HttpGet]
+        public ActionResult Form()
+        {
+            return View();
+        }
+
         [HttpPost]
         public ActionResult Save(BaptismModel model)
         {

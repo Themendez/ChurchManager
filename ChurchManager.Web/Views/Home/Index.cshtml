@@ -1,3 +1,43 @@
 ﻿@{
     ViewBag.Title = "Church Manager";
 }
+<div class="container">
+    <div class="row">
+        <div class="col-lg-10 col-lg-offset-1 col-md-10 col-md-offset-1 col-sm-12 col-xs-12">
+            <div class="page-header">
+                <h1>
+                    October 2013
+                    <div class="pull-right">
+                        <div class="btn-group">
+                            <a class="btn btn-default btn-sm">month</a>
+                            <a class="btn btn-default btn-sm">week</a>
+                            <a class="btn btn-default btn-sm">day</a>
+                        </div>
+                        <div class="btn-group">
+                            <a class="btn btn-default btn-sm">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+                            <a class="btn btn-default btn-sm">today</a>
+                            <a class="btn btn-default btn-sm">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </h1>
+            </div>
+            <div id="calendar">
+            </div>
+        </div>
+    </div>
+</div>
+@section Scripts{
+    <script type="text/javascript">
+        $('#calendar').fullCalendar({
+            header: {
+                left: '',
+                center: '',
+                right: ''
+            }
+        });
+    </script>
+}
