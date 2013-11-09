@@ -1,5 +1,4 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
 namespace ChurchManager.Web
 {
@@ -10,6 +9,7 @@ namespace ChurchManager.Web
         {
             bundles.Add(new ScriptBundle("~/bundles/base")
                             .Include("~/Scripts/lib/jquery/jquery-2.0.3.js")
+                            .Include("~/Scripts/lib/jquery.ui-{version}")
                             .Include("~/Scripts/lib/angular/angular.js")
                             .Include("~/Scripts/lib/angular/angular-animate.js")
                             .Include("~/Scripts/lib/bootstrap/bootstrap.js")
@@ -23,9 +23,7 @@ namespace ChurchManager.Web
                             .IncludeDirectory("~/Scripts/app/controllers", "*.js", true));
 
             bundles.Add(new StyleBundle("~/Content/styles")
-                .Include("~/Content/css/bootstrap.css")
-                .Include("~/Content/css/font-awesome.css")
-                .Include("~/Content/css/site.css"));
+                .IncludeDirectory("~/Content/css", "*.css", true));
         }
     }
 }
