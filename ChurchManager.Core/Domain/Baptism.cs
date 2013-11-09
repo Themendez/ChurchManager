@@ -14,5 +14,7 @@ namespace ChurchManager.Core.Domain
         public virtual Person GodParent1 { get; set; }
 
         public virtual Person GodParent2 { get; set; }
+
+        public virtual Person Priest { get; set; }
     }
 }
