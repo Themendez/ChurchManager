@@ -35,7 +35,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Domain\Baptism.cs" />
+    <Compile Include="Domain\Parish.cs" />
     <Compile Include="Domain\Person.cs" />
+    <Compile Include="Domain\Presbyter.cs" />
     <Compile Include="Persistence\SearchRequest.cs" />
     <Compile Include="Persistence\SearchResult.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -43,6 +45,7 @@
     <Compile Include="Persistence\IRepository.cs" />
     <Compile Include="Service\IBaptismService.cs" />
     <Compile Include="Service\IApplicationService.cs" />
+    <Compile Include="Service\IParishService.cs" />
     <Compile Include="Service\IPersonService.cs" />
   </ItemGroup>
   <ItemGroup />

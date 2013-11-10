@@ -45,6 +45,7 @@
     <Compile Include="PersonService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\BaptismService.cs" />
+    <Compile Include="Services\ParishService.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

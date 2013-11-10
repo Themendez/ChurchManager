@@ -58,6 +58,9 @@
     <Compile Include="Controllers\BaptismController.cs" />
     <Compile Include="Controllers\ControllerBase.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ParishController.cs" />
+    <Compile Include="Mappings\ParishMapping.cs" />
+    <Compile Include="Models\ParishModel.cs" />
     <Compile Include="Controllers\PersonController.cs" />
     <Compile Include="Mappings\BaptismMapping.cs" />
     <Compile Include="Mappings\IModelMapping.cs" />

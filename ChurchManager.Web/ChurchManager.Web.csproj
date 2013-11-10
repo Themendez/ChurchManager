@@ -21,6 +21,8 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <WebGreaseLibPath>..\packages\WebGrease.1.5.2\lib</WebGreaseLibPath>
+    <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
+    <RestorePackages>true</RestorePackages>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -402,6 +404,7 @@
     <Folder Include="Scripts\app\directives\" />
     <Folder Include="Scripts\app\filters\" />
     <Folder Include="Scripts\app\services\" />
+    <Folder Include="Views\Sacrments\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config">
@@ -448,6 +451,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Person\Form.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Parish\Form.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
